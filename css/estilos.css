@@ -1,0 +1,47 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 3rem;
+    background: none;
+    color: crimson;
+    border-bottom: none;
+    margin: 40px;
+    text-align: center;
+}
+
+/* Este media se activa cuando la pantalla sobrepasa los 700 pixeles de ancho*/
+@media screen and (min-width: 700px){
+    body{
+    background-color: chocolate;
+    }
+}
+
+/*Este media se activa cuando la pantalla se activa en un rango a partir de los 400 pixeles a los 700 pixeles de ancho*/
+@media screen and (min-width:400px), (max-width:700px) {
+    .title {
+        background: #000;
+        color: #fff;
+    }
+}
+
+/*Este media se activa hasta que la pantalla llegue a un máximo de 600 pixeles de ancho*/
+@media screen and (max-width:600px) {
+    .title {
+        text-align: left;
+        background: steelblue;
+    }
+}
+
+/*Este media se activa cuando se activa la ventana para imprimir la página web*/
+@media print {
+    .title {
+        color: steelblue;
+        font-size: 5rem;
+        text-align: right;
+        font-family: cursive;
+    }
+}
